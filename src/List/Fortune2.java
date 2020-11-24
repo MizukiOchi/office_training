@@ -135,7 +135,7 @@ public class Fortune2 {
 		try {
 			FileReader fileReader = new FileReader(file);
 			BufferedReader bufferedReader = new BufferedReader(fileReader);
-			//CSVファイルの最初の行を削除して２行目から読み込む
+			//CSVファイルの２行目から読み込む(不要な一行目をループ前に読み込んでいる。)
 			String data = "";
 			bufferedReader.readLine();
 			//④−２、おみくじのインスタンスを作ってリストに入れる
@@ -193,8 +193,11 @@ public class Fortune2 {
 		//Listに入れた子クラスノオブフェクトをシャッフルする
 		//1,shuffleで箱をシャッフルする方法
 		Collections.shuffle(fortune);
-		//	２、rondomで引く方をシャッフルする方法もある！
 		StringBuilder sb = new StringBuilder();
+
+//		//エンコードを調べる
+//		System.out.println(System.getProperty("file.encoding"));
+
 		//インターファイスで定義したメソッドを出力
 		System.out.println(fortune.get(0).disp());
 		/**
