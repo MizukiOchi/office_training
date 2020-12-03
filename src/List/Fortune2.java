@@ -16,7 +16,6 @@ import java.util.Date;
 import java.util.List;
 
 public class Fortune2 {
-	//	throws ParseExceptionをtry catchへ変更する 。
 	public static void main(String[] args) throws IOException {
 		Fortune2 fortune2 = new Fortune2();
 		fortune2.fortune();
@@ -24,10 +23,6 @@ public class Fortune2 {
 
 	@SuppressWarnings("null")
 	public void fortune() throws IOException {
-		/**
-		 * fortuneget.csvに出力結果を書き込み
-		 * (today,birthday,fortune,wish,commercial,study)
-		 */
 		/**
 		 * ①誕生日の入力を求める
 		 */
@@ -72,8 +67,9 @@ public class Fortune2 {
 		 */
 		Date date = new Date();
 		SimpleDateFormat df = new SimpleDateFormat("yyyy/MM/dd");
+
 		/**
-		 * ③過去の結果と比較する
+		 * ③過去の結果と比較する（CSVファイルを使用する）
 		 * 　１、結果ファイルを１行ずつ読む。
 		 * 　２、一致→同じ結果を返す→終了
 		 * 　３、不一致→シャッフルをして結果を出す
