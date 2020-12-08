@@ -131,8 +131,8 @@ public class Fortune2 {
 		try {
 			FileReader fileReader = new FileReader(file);
 			BufferedReader bufferedReader = new BufferedReader(fileReader);
-			//CSVファイルの２行目から読み込む(不要な一行目をループ前に読み込んでいる。)
 			String data = "";
+			//CSVファイルの２行目から読み込む(不要な一行目をループ前に読み込んでいる。)
 			bufferedReader.readLine();
 			//④−２、おみくじのインスタンスを作ってリストに入れる
 			while ((data = bufferedReader.readLine()) != null) {
@@ -191,8 +191,8 @@ public class Fortune2 {
 		Collections.shuffle(fortune);
 		StringBuilder sb = new StringBuilder();
 
-//		//エンコードを調べる
-//		System.out.println(System.getProperty("file.encoding"));
+		//		//エンコードを調べる
+		//		System.out.println(System.getProperty("file.encoding"));
 
 		//インターファイスで定義したメソッドを出力
 		System.out.println(fortune.get(0).disp());
