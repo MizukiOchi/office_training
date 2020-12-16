@@ -3,68 +3,95 @@ package Bean;
 public class OmikujiBean {
 
 	// カラム全て作成
-	private int omikuji_id;
-	private int omikuji_name;
-	private int omikui_changetr;
-	private int changer;
-	private int update_date;
-	private int author;
-	private int create_date;
+	private String omikuji_id;
+	private String fortune_id;
+	private String wish;
+	private String business;
+	private String study;
+	private String changer;
+	private String update_date;
+	private String author;
+	private String create_date;
+	private String fortune_name;
 
-	public int getOmikuji_id() {
+	public String getOmikuji_id() {
 		return omikuji_id;
 	}
 
-	public void setOmikuji_id(int omikuji_id) {
+	public void setOmikuji_id(String omikuji_id) {
 		this.omikuji_id = omikuji_id;
 	}
 
-	public int getOmikuji_name() {
-		return omikuji_name;
+	public String getFortune_id() {
+		return fortune_id;
 	}
 
-	public void setOmikuji_name(int omikuji_name) {
-		this.omikuji_name = omikuji_name;
+	public void setFortune_id(String fortune_id) {
+		this.fortune_id = fortune_id;
 	}
 
-	public int getOmikui_changetr() {
-		return omikui_changetr;
+	public String getWish() {
+		return wish;
 	}
 
-	public void setOmikui_changetr(int omikui_changetr) {
-		this.omikui_changetr = omikui_changetr;
+	public void setWish(String wish) {
+		this.wish = wish;
 	}
 
-	public int getChanger() {
+	public String getBusiness() {
+		return business;
+	}
+
+	public void setBusiness(String business) {
+		this.business = business;
+	}
+
+	public String getStudy() {
+		return study;
+	}
+
+	public void setStudy(String study) {
+		this.study = study;
+	}
+
+	public String getChanger() {
 		return changer;
 	}
 
-	public void setChanger(int changer) {
+	public void setChanger(String changer) {
 		this.changer = changer;
 	}
 
-	public int getUpdate_date() {
+	public String getUpdate_date() {
 		return update_date;
 	}
 
-	public void setUpdate_date(int update_date) {
+	public void setUpdate_date(String update_date) {
 		this.update_date = update_date;
 	}
 
-	public int getAuthor() {
+	public String getAuthor() {
 		return author;
 	}
 
-	public void setAuthor(int author) {
+	public void setAuthor(String author) {
 		this.author = author;
 	}
 
-	public int getCreate_date() {
+	public String getCreate_date() {
 		return create_date;
 	}
 
-	public void setCreate_date(int create_date) {
+	public void setCreate_date(String create_date) {
 		this.create_date = create_date;
+	}
+
+	public String getFortune_name() {
+		return fortune_name;
+	}
+
+	public void setFortune_name(String fortune_name) {
+		this.fortune_name = fortune_name;
 	}
 
 }

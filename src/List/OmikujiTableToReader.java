@@ -170,7 +170,7 @@ public class OmikujiTableToReader {
 				ps.setString(6, ochi);
 				ps.setString(7, ochi);
 				System.out.println(ps);
-				// ps.executeUpdate();
+				 ps.executeUpdate();
 				// connection.commit();
 				// System.out.println(sql);
 			}
